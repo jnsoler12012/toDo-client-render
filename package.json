@@ -8,7 +8,8 @@
   },
   "scripts": {
     "startServer": "serve -s dist",
-    "start": "webpack-dev-server --host 0.0.0.0 --allowed-hosts all --config webpack.dev.cjs",
+    "start": "webpack-dev-server --host 0.0.0.0 --allowed-hosts all --open --config webpack.dev.cjs",
+    "startRender": "node ./build/main.cjs",
     "build": "webpack --config webpack.prod.cjs",
     "predeploy": "npm run build",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --silent",
