@@ -7,7 +7,7 @@ module.exports = {
     output: {
         path: `${__dirname}/dist`,
         clean: true,
-        filename: '[contenthash].js',
+        filename: '[name].js',
     },
     resolve: {
         extensions: ['.js', '.jsx'],
